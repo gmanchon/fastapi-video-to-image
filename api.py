@@ -21,7 +21,7 @@ app.add_middleware(
 @app.post("/predict")
 async def upload_file(in_file: UploadFile = File(...)):
 
-    # save video
+    # save video https://stackoverflow.com/questions/63580229/how-to-save-uploadfile-in-fastapi
     out_file_path = "bbb.mp4"
 
     async with aiofiles.open(out_file_path, "wb") as out_file:
