@@ -1,4 +1,5 @@
 fastapi
 uvicorn
 aiofiles
+imageio
 python-multipart
